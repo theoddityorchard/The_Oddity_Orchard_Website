@@ -1,7 +1,25 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf6ed"><title>The Oddity Orchard | Handmade Curiosities</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
-<body><header class="site-header"><a class="logo" href="#orchard">The Oddity Orchard ✿</a><nav aria-label="Main navigation"><a href="#orchard">The Orchard</a><a href="#gallery">The Gallery</a></nav></header>
-<main><section id="orchard" class="hero"><div class="hero-content"><span class="eyebrow">A little handmade world</span><h1>Welcome to the Orchard</h1><p>Wander a little. Find something lovely.</p><a class="explore-button" href="#gallery">Explore the Nook ↓</a></div></section>
-<section id="gallery" class="gallery-section"><span class="eyebrow">Handmade with a little whimsy</span><h2>Treasures from the Nook</h2><p class="gallery-intro">Curious creations, little oddities, and handmade treasures waiting to be discovered.</p><div class="filters" aria-label="Product categories"><button class="active" data-filter="all">All</button><button data-filter="earrings">Earrings</button><button data-filter="keychains">Keychains</button><button data-filter="other">Other Finds</button></div><div id="product-grid" class="product-grid"></div></section></main>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#faf6ed"><title>The Oddity Orchard | Handmade Curiosities</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body>
+<header class="site-header"><a class="logo" href="#orchard">The Oddity Orchard ✿</a><nav aria-label="Main navigation"><a href="#orchard">The Orchard</a><a href="#shop">The Shop</a><a href="#gallery">The Gallery</a></nav></header>
+<main>
+<section id="orchard" class="scene-section" aria-label="The Oddity Orchard outside">
+  <h1 class="sr-only">Welcome to The Oddity Orchard</h1>
+  <div class="scene-image-wrap">
+    <img class="scene-image" src="Orchard_Edit2.png" alt="A magical pistachio orchard with a welcoming curiosity shop on the right" fetchpriority="high">
+    <a class="door-hotspot" href="#shop" aria-label="Enter the curiosity shop"><span class="sr-only">Enter the shop</span></a>
+  </div>
+  <p class="scene-caption">Psst… tap the shop doorway to step inside. ✨</p>
+</section>
+<section id="shop" class="scene-section shop-section" aria-label="Inside The Oddity Orchard shop">
+  <h2 class="sr-only">Inside the Shop</h2>
+  <div class="scene-image-wrap">
+    <img class="scene-image" src="The_Shop_edit_5.png" alt="The magical Oddity Orchard shop, filled with handmade earrings, keychains, crystals and curiosities, with a black cat at the counter" loading="lazy">
+  </div>
+  <div class="scene-actions"><a class="explore-button" href="#orchard">← Back to the Orchard</a><a class="explore-button" href="#gallery">Browse the Treasures ↓</a></div>
+</section>
+<section id="gallery" class="gallery-section"><span class="eyebrow">Handmade with a little whimsy</span><h2>Treasures from the Nook</h2><p class="gallery-intro">Curious creations, little oddities, and handmade treasures waiting to be discovered.</p><div class="filters" aria-label="Product categories"><button class="active" data-filter="all">All</button><button data-filter="earrings">Earrings</button><button data-filter="keychains">Keychains</button><button data-filter="other">Other Finds</button></div><div id="product-grid" class="product-grid"></div></section>
+</main>
 <div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Product image preview"><button id="close-lightbox" aria-label="Close image">×</button><img id="lightbox-image" alt=""></div>
 <footer><p>Made with love, curiosity &amp; a little chaos. ♡</p><p>© 2026 The Oddity Orchard</p></footer></body></html>
