@@ -33,6 +33,6 @@
 /* Invisible, accessible clickable regions on the shop illustration. */
 .shop-hotspot{position:absolute;display:block;z-index:2;background:transparent;border:0;box-shadow:none;cursor:pointer}
 .shop-hotspot:focus-visible{outline:3px solid #fff2b6;outline-offset:2px}
-.shop-earrings{left:3%;top:17%;width:30%;height:65%}
-.shop-keychains{left:34%;top:20%;width:31%;height:58%}
-.shop-other{left:66%;top:17%;width:32%;height:65%}
+.shop-earrings{left:3%;top:17%;width:26%;height:65%}
+.shop-keychains{left:29%;top:17%;width:37%;height:66%}
+.shop-other{left:66%;top:17%;width:32%;height:76%}
