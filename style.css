@@ -10,3 +10,11 @@
 @keyframes magic-twinkle{0%,100%{opacity:0;transform:translate(-50%,-50%) scale(.25) rotate(0deg)}35%,65%{opacity:.95;transform:translate(-50%,-50%) scale(1) rotate(35deg)}}
 @keyframes magic-firefly{0%,100%{opacity:0;transform:translate(-50%,4px) scale(.5)}35%,65%{opacity:.9}80%{transform:translate(-35%,-14px) scale(1)}}
 @media(prefers-reduced-motion:reduce){.door-hotspot.sparkle-hint .magic-spark{animation:none!important;opacity:.7;transform:translate(-50%,-50%) scale(1)}html{scroll-behavior:auto}}
+
+/* High-visibility independent twinkles, no box or outline. */
+.door-hotspot .magic-spark.star{width:clamp(14px,1.9vw,30px);height:clamp(14px,1.9vw,30px);background:#fff9dc;filter:drop-shadow(0 0 7px #fff1a0) drop-shadow(0 0 11px #ffd36c)}
+.door-hotspot .magic-spark.firefly{width:clamp(7px,.9vw,14px);height:clamp(7px,.9vw,14px);background:#fffde3;box-shadow:0 0 9px 5px #ffdf88,0 0 24px 10px #ffcd6780}
+.door-hotspot.sparkle-hint .magic-spark.star{animation:magic-twinkle-strong 5.8s ease-in-out both;animation-delay:var(--delay)}
+.door-hotspot.sparkle-hint .magic-spark.firefly{animation:magic-firefly-strong 5.8s ease-in-out both;animation-delay:var(--delay)}
+@keyframes magic-twinkle-strong{0%,100%{opacity:0;transform:translate(-50%,-50%) scale(.25) rotate(0deg)}22%,76%{opacity:1;transform:translate(-50%,-50%) scale(1.2) rotate(40deg)}48%{opacity:.6;transform:translate(-50%,-50%) scale(.8) rotate(65deg)}}
+@keyframes magic-firefly-strong{0%,100%{opacity:0;transform:translate(-50%,10px) scale(.5)}25%,75%{opacity:1}85%{transform:translate(-25%,-25px) scale(1.2)}}
