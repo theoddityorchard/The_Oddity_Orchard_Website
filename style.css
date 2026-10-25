@@ -18,3 +18,7 @@
 .door-hotspot.sparkle-hint .magic-spark.firefly{animation:magic-firefly-strong 5.8s ease-in-out both;animation-delay:var(--delay)}
 @keyframes magic-twinkle-strong{0%,100%{opacity:0;transform:translate(-50%,-50%) scale(.25) rotate(0deg)}22%,76%{opacity:1;transform:translate(-50%,-50%) scale(1.2) rotate(40deg)}48%{opacity:.6;transform:translate(-50%,-50%) scale(.8) rotate(65deg)}}
 @keyframes magic-firefly-strong{0%,100%{opacity:0;transform:translate(-50%,10px) scale(.5)}25%,75%{opacity:1}85%{transform:translate(-25%,-25px) scale(1.2)}}
+
+/* Smaller points, same warm shimmer; 20 distinct sparkles instead of large halos. */
+.door-hotspot .magic-spark.star{width:clamp(12px,1.25vw,19px);height:clamp(12px,1.25vw,19px);filter:drop-shadow(0 0 4px #fff1a0) drop-shadow(0 0 6px #ffd36c)}
+.door-hotspot .magic-spark.firefly{width:clamp(5px,.55vw,9px);height:clamp(5px,.55vw,9px);box-shadow:0 0 6px 2px #ffdf88,0 0 12px 5px #ffcd6766}
