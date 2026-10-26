@@ -47,3 +47,7 @@
 .social-link:focus-visible{outline:3px solid #8663aa;outline-offset:3px}
 .social-link>span:nth-child(2){display:flex;flex:1;flex-direction:column;gap:3px}
 .social-link strong{font-size:17px}.social-link small{font-size:13px}.social-symbol{font-size:30px;line-height:1}
+
+/* Balcony entrance to the Whispering Attic; separate from product hotspots. */
+.attic-entrance{position:absolute;left:37%;top:2%;width:30%;height:25%;z-index:5;background:transparent;border:0;cursor:pointer;display:block}
+.attic-entrance:focus-visible{outline:3px solid #fff2b6;outline-offset:3px}
