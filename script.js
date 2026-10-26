@@ -16,7 +16,7 @@ document.querySelectorAll("[data-shop-category]").forEach(link=>link.addEventLis
 // Determine category from the actual click position on the illustrated shop,
 // independent of which transparent overlay the browser hit.
 (()=>{const scene=document.querySelector("#shop .scene-image-wrap");const picture=scene?.querySelector(".scene-image");if(!scene||!picture)return;
-scene.addEventListener("click",event=>{const bounds=picture.getBoundingClientRect();if(!bounds.width||!bounds.height)return;const x=(event.clientX-bounds.left)/bounds.width;const y=(event.clientY-bounds.top)/bounds.height;if(x<0||x>1||y<0||y>1)return;
+scene.addEventListener("click",event=>{if(event.target.closest(".attic-entrance"))return;const bounds=picture.getBoundingClientRect();if(!bounds.width||!bounds.height)return;const x=(event.clientX-bounds.left)/bounds.width;const y=(event.clientY-bounds.top)/bounds.height;if(x<0||x>1||y<0||y>1)return;
 let category=null;if(x<=.253)category="earrings";else if(x<=.433&&y>=.09&&y<=.95)category="keychains";else if(x>=.66&&y>=.17&&y<=.93)category="other";
 if(!category)return;event.preventDefault();event.stopPropagation();const button=document.querySelector('.filters [data-filter="'+category+'"]');button?.click();document.querySelector("#gallery")?.scrollIntoView({behavior:"smooth",block:"start"});
 },true);
